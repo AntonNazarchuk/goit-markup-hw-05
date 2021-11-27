@@ -535,13 +535,14 @@ body {
   margin-bottom: 30px;
 }
 
-.main-section-item:hover .main-section-top-text {
-  transform: translate(0%);
-}
-
+.main-section-item:hover .main-section-top-text,
 .main-section-item:focus .main-section-top-text {
   transform: translate(0%);
 }
+
+/* .main-section-item:focus .main-section-top-text {
+  transform: translate(0%);
+} */
 
 .main-section-card-link {
   display: block;
