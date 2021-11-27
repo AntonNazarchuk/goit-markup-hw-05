@@ -75,7 +75,7 @@ body {
 .header-container {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: center;
 }
 
 .header-navigation {
@@ -536,6 +536,10 @@ body {
 }
 
 .main-section-item:hover .main-section-top-text {
+  transform: translate(0%);
+}
+
+.main-section-item:focus .main-section-top-text {
   transform: translate(0%);
 }
 
