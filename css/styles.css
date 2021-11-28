@@ -64,6 +64,18 @@ body {
   margin: 0 auto;
 }
 
+.time-link {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
+.time-link-icon {
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: var(--time-function);
+}
+
 /*------------------ header------------------- */
 .header {
   display: flex;
@@ -127,9 +139,9 @@ body {
   color: var(--header-text-color-first);
   padding: 32px 0px;
   position: relative;
-  transition-property: color;
+  /* transition-property: color;
   transition-duration: 250ms;
-  transition-timing-function: var(--time-function);
+  transition-timing-function: var(--time-function); */
   /* transition: color 250ms linear; */
 }
 
@@ -184,9 +196,6 @@ body {
   fill: var(--second-text-color);
   justify-content: center;
   align-items: center;
-  transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-function);
 }
 
 .icon-mail {
