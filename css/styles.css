@@ -65,13 +65,13 @@ body {
 }
 
 .time-link {
-  transition-property: all;
+  transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: var(--time-function);
 }
 
 .time-link-icon {
-  transition-property: all;
+  transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: var(--time-function);
 }
