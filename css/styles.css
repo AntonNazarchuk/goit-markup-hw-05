@@ -145,8 +145,11 @@ body {
   /* transition: color 250ms linear; */
 }
 
-.header-link:hover.active::after,
-.header-link:focus.active::after {
+.active {
+  color: var(--main-logo-color);
+}
+
+.header-link.active::after {
   position: absolute;
   display: block;
   content: '';
@@ -618,9 +621,10 @@ body {
 
 .main-section-top-text {
   position: absolute;
+
   top: 0;
   left: 0;
-  padding: 24px;
+  padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
   line-height: 1.6;
@@ -762,6 +766,10 @@ body {
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: var(--time-function);
 }
 
 .is-hidden {
@@ -769,9 +777,9 @@ body {
   opacity: 0;
   pointer-events: none;
 
-  /* transition-property: opacity;
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-function); */
+  transition-property: opacity;
+  transition-duration: 300ms;
+  transition-timing-function: var(--time-function);
 }
 
 .modal {
