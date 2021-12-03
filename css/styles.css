@@ -139,10 +139,6 @@ body {
   color: var(--header-text-color-first);
   padding: 32px 0px;
   position: relative;
-  /* transition-property: color;
-  transition-duration: 250ms;
-  transition-timing-function: var(--time-function); */
-  /* transition: color 250ms linear; */
 }
 
 .active {
